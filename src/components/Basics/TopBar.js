@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../media/logo/logo.png";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import Tejaswini from "../../media/top-bar/pic.jpeg";
 import Harshwardhan from "../../media/top-bar/prof.jpg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -22,16 +20,7 @@ const TopBar = () => {
       {/* Desktop */}
       <div className="desktop-view">
         <div className="top-right-items">
-          {/* <Link className="top-right-item top-link" to="/">
-            FAQ
-          </Link>
-          <Link className="top-right-item top-link" to="/">
-            Feedback
-          </Link>
-          <div className="top-right-item top-notify">
-            {notificationCount > 0 && <div className="notify-circle"></div>}
-            <NotificationsNoneOutlinedIcon />
-          </div> */}
+         
           <Link to="/" className="top-right-item profile">
             <img src={Harshwardhan} alt="Logo" />
             &nbsp; &nbsp;
@@ -52,18 +41,7 @@ const TopBar = () => {
         <OutsideClickHandler onOutsideClick={() => setMenu(1)}>
           {menu === 2 && (
             <div className="top-right-items">
-              {/* <Link className="top-right-item top-link" to="/">
-                FAQ
-              </Link>
-              <Link className="top-right-item top-link" to="/">
-                Feedback
-              </Link>
-              <div className="top-right-item top-notify">
-                {notificationCount === 1 && (
-                  <div className="notify-circle"></div>
-                )}
-                <NotificationsNoneOutlinedIcon />
-              </div> */}
+              
               <Link to="/" className="top-right-item profile">
                 <img src={Harshwardhan} alt="Logo" />
                 &nbsp; &nbsp;

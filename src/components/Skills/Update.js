@@ -30,7 +30,6 @@ const Update = ({ handleClose }) => {
       <div className="dialog-heading">
         <div className="heading-name">Update Score Skills</div>
         <div className="logo">
-          {/* <div className="logo-name">HTML</div> */}
           <div className="logo-image">
             <img
               src={html}
@@ -46,13 +45,7 @@ const Update = ({ handleClose }) => {
             <span>1</span>Update your <b>Rank</b>
           </div>
           <div className="button-input">
-            {/* <Button
-              onClick={() => {
-                ranks > 0 && setRank(ranks - 1);
-              }}
-            >
-              -
-            </Button> */}
+          
             <input
               type="number"
               value={ranks}
@@ -60,13 +53,7 @@ const Update = ({ handleClose }) => {
                 setRank(e.target.value);
               }}
             ></input>
-            {/* <Button
-              onClick={() => {
-                setRank(ranks + 1);
-              }}
-            >
-              +
-            </Button> */}
+        
           </div>
         </div>
         <div className="input-rank">
@@ -74,13 +61,7 @@ const Update = ({ handleClose }) => {
             <span>2</span>Update your <b>Percentile</b>
           </div>
           <div className="button-input">
-            {/* <Button
-              onClick={() => {
-                percentiles > 0 && setPercentile(percentiles - 1);
-              }}
-            >
-              -
-            </Button> */}
+       
             <input
               type="number"
               value={percentiles}
@@ -89,13 +70,7 @@ const Update = ({ handleClose }) => {
               }}
               max="100"
             ></input>
-            {/* <Button
-              onClick={() => {
-                percentiles < 100 && setPercentile(percentiles + 1);
-              }}
-            >
-              +
-            </Button> */}
+          
           </div>
         </div>
         <div className="input-rank">
@@ -103,13 +78,7 @@ const Update = ({ handleClose }) => {
             <span>3</span>Update your <b>Score</b>
           </div>
           <div className="button-input">
-            {/* <Button
-              onClick={() => {
-                scores > 0 && setScore(scores - 1);
-              }}
-            >
-              -
-            </Button> */}
+          
             <input
               type="number"
               value={scores}
@@ -117,13 +86,7 @@ const Update = ({ handleClose }) => {
                 setScore(e.target.value);
               }}
             ></input>
-            {/* <Button
-              onClick={() => {
-                scores < stats.totalQuestions && setScore(scores + 1);
-              }}
-            >
-              +
-            </Button> */}
+      
           </div>
         </div>
       </div>

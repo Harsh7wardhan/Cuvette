@@ -1,7 +1,6 @@
 import React from "react";
 import CardHeading from "../Basics/CardHeading";
 import html from '../../media/IndividualTest/html.png'
-import Dialog from "@mui/material/Dialog";
 import Update from "./Update";
 import { useSelector } from "react-redux";
 
@@ -43,9 +42,17 @@ const IndividualTest = () => {
       </div>
 
       {/* Dialog */}
-      <Dialog open={open} aria-labelledby="responsive-dialog-title">
+      {/* <Dialog open={open} aria-labelledby="responsive-dialog-title">
         <Update handleClose={handleClose} />
-      </Dialog>
+      </Dialog> */}
+
+      {open && (
+        <div className="overlay">
+          <div className="custom-popup">
+            <Update handleClose={handleClose} />
+          </div>
+        </div>
+      )}
       {/* ---- */}
 
       <div className="statics-individual">

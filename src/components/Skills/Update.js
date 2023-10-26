@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useSelector } from "react-redux";
 import { updateStats } from "../../redux/actions/update";
 import { useDispatch } from "react-redux";

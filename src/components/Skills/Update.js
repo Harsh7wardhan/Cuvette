@@ -45,7 +45,7 @@ const Update = ({ handleClose }) => {
             <span>1</span>Update your <b>Rank</b>
           </div>
           <div className="button-input">
-          
+
             <input
               type="number"
               value={ranks}
@@ -53,7 +53,7 @@ const Update = ({ handleClose }) => {
                 setRank(e.target.value);
               }}
             ></input>
-        
+
           </div>
         </div>
         <div className="input-rank">
@@ -61,7 +61,7 @@ const Update = ({ handleClose }) => {
             <span>2</span>Update your <b>Percentile</b>
           </div>
           <div className="button-input">
-       
+
             <input
               type="number"
               value={percentiles}
@@ -70,7 +70,7 @@ const Update = ({ handleClose }) => {
               }}
               max="100"
             ></input>
-          
+
           </div>
         </div>
         <div className="input-rank">
@@ -78,7 +78,7 @@ const Update = ({ handleClose }) => {
             <span>3</span>Update your <b>Score</b>
           </div>
           <div className="button-input">
-          
+
             <input
               type="number"
               value={scores}
@@ -86,12 +86,12 @@ const Update = ({ handleClose }) => {
                 setScore(e.target.value);
               }}
             ></input>
-      
+
           </div>
         </div>
       </div>
       <div className="dialog-buttons">
-        <Button
+        {/* <Button
           className="out"
           variant="outlined"
           color="primary"
@@ -99,8 +99,11 @@ const Update = ({ handleClose }) => {
         >
           {" "}
           Cancel{" "}
-        </Button>
-        <Button
+        </Button> */}
+        <button className="out" onClick={handleClose}>{" "}Cancel{" "}</button>
+
+        <button className="fill" onClick={saveData}>{" "}Save {"→"}</button>
+        {/* <Button
           className="fill"
           variant="contained"
           color="primary"
@@ -108,7 +111,7 @@ const Update = ({ handleClose }) => {
         >
           {" "}
           Save &nbsp; <ArrowForwardIcon fontSize="14px" />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

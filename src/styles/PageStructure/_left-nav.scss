@@ -24,6 +24,9 @@
       border-radius: 0 2rem 2rem 0;
       margin-right: 1.8rem;
       transition: all 0.3s ease-in;
+      .nav-img{
+        margin-right: 0.5em;
+      }
       &:hover {
         color: $link-hover-color;
         background-color: $link-hover-back;

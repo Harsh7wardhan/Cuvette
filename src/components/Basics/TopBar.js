@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../media/logo/logo.png";
 import Harshwardhan from "../../media/top-bar/prof.jpg";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import OutsideClickHandler from "react-outside-click-handler";
 
 const TopBar = () => {
   const notificationCount = 1;
@@ -30,7 +27,7 @@ const TopBar = () => {
       </div>
       {/* ---------- */}
       {/* Mobile */}
-      <div className="mobile-view">
+      {/* <div className="mobile-view">
         <div className="hamburger">
           {menu === 1 ? (
             <MenuIcon onClick={() => setMenu(2)} />
@@ -50,7 +47,7 @@ const TopBar = () => {
             </div>
           )}
         </OutsideClickHandler>
-      </div>
+      </div> */}
     </div>
   );
 };

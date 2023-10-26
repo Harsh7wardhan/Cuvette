@@ -1,7 +1,6 @@
 import React from "react";
 import CardHeading from "../Basics/CardHeading";
 import html from '../../media/IndividualTest/html.png'
-import { Button } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import Update from "./Update";
 import { useSelector } from "react-redux";
@@ -36,9 +35,10 @@ const IndividualTest = () => {
           </div>
         </div>
         <div className="button">
-          <Button variant="contained" color="primary" onClick={handleClickOpen}>
+          {/* <Button variant="contained" color="primary" onClick={handleClickOpen}>
             Update
-          </Button>
+          </Button> */}
+          <button className='update-button' onClick={handleClickOpen}>Update</button>
         </div>
       </div>
 

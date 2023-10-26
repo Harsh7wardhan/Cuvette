@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
-import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
-import MilitaryTechOutlinedIcon from "@mui/icons-material/MilitaryTechOutlined";
+import sb1 from "../../media/top-bar/sb1.png";
+import sb2 from "../../media/top-bar/sb2.png";
+import sb3 from "../../media/top-bar/sb3.png";
+
 
 const LeftNav = () => {
   return (
@@ -14,7 +15,9 @@ const LeftNav = () => {
           to="/dashboard"
           exact
         >
-          <EqualizerOutlinedIcon fontSize="14" /> &nbsp; Dashboard
+          <img className="nav-img" src={sb2}/>
+          Dashboard
+          {/* <EqualizerOutlinedIcon fontSize="14" /> &nbsp; Dashboard */}
         </NavLink>
         <NavLink
           activeClassName="active-nav-item"
@@ -22,7 +25,9 @@ const LeftNav = () => {
           to="/"
           exact
         >
-          <MilitaryTechOutlinedIcon fontSize="14" /> &nbsp; Skill Test
+          <img className="nav-img" src={sb3}/>
+          Skill Test
+          {/* <MilitaryTechOutlinedIcon fontSize="14" /> &nbsp; Skill Test */}
         </NavLink>
         <NavLink
           activeClassName="active-nav-item"
@@ -30,7 +35,9 @@ const LeftNav = () => {
           to="/internships"
           exact
         >
-          <FileOpenOutlinedIcon fontSize="14" /> &nbsp; Internships
+          <img className="nav-img" src={sb1}/>
+          Internships
+          {/* <FileOpenOutlinedIcon fontSize="14" /> &nbsp; Internships */}
         </NavLink>
       </div>
     </div>

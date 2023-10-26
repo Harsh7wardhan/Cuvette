@@ -83,7 +83,7 @@
   .dialog-buttons {
     display: flex;
     justify-content: flex-end;
-    
+
     align-items: center;
     height: 80px;
     border-top: 1px solid $border-color;
@@ -91,16 +91,20 @@
       width: 120px;
       height: 44px;
       color: $button;
-      border-color: $button;
+      border-radius: 5px;
+      border: 1px solid var(--dark-blue, #142683);
+      color: #142683;
       margin-right: 2.4rem;
       text-transform: none;
     }
     .fill {
       width: 120px;
       height: 44px;
-      background-color: $button;
+      border-radius: 5px;
+      background: #142683;
       text-transform: none;
       margin-right: 2.4rem;
+      color: white;
     }
   }
 }
